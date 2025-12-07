@@ -11,11 +11,11 @@
     <script>
     function tempAlert(msg,duration) {
         var el = document.createElement("div");
-        el.setAttribute("style","position:absolute;top:85px;left:50%;transform:translateX(-50%);padding:5px 20px;background-color:white;");
+        el.setAttribute("style","position:absolute;top:85px;left:50%;font-size: 24px;transform:translateX(-50%);padding:5px 20px;background-color:white;");
         el.innerHTML = msg;
-        setTimeout(function(){
-          el.parentNode.removeChild(el);
-        },duration);
+        // setTimeout(function(){
+        //   el.parentNode.removeChild(el);
+        // },duration);
         document.body.appendChild(el);
       }
       tempAlert("Screen resolution is " + screen.width + "x" + screen.height,5000);
